@@ -1,6 +1,8 @@
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+import javax.swing.JPanel;
+
 public class GameController {
 	private GameModel model;
 	private GameView view;
@@ -20,8 +22,12 @@ public class GameController {
 		public void mousePressed(MouseEvent e) {
 			//e.getComponent().setVisible(false);
 			System.out.println("A CARD WAS CLICKED ON!");
-			System.out.println(((CardLabel)e.getSource()).getCard().toString());
-			((CardLabel)e.getSource()).flip();
+			System.out.println(((CardLabel)e.getSource()).getCard().toString());getClass();
+			JPanel glass = (JPanel) view.getGlassPane();
+			glass.add(e.getComponent());
+			glass.setVisible(true);
+			((CardLabel)e.getSource()).setMousePos(e.getXOnScreen(), e.getXOnScreen(), e.getXOnScreen(), e.getXOnScreen());
+			glass.repaint();
 			model.determineWinner();
 			model.nextTurn();
 

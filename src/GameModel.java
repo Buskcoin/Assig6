@@ -58,14 +58,12 @@ public class GameModel
 
 	public void nextTurn() {
 		// TODO Auto-generated method stub
-		
+	
 	}
 	
 	public Hand getHumanHand(){
 		highCardGame.deal();
-		return highCardGame.getHand(0);
-	
+		return highCardGame.getHand(0);	
 	}
-        
 
 }
