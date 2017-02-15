@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @author BigMac
  *
  */
-public class GameModel
+class GameModel
 {
    static int NUM_CARDS_PER_HAND = 7;
    static int NUM_PLAYERS = 2;

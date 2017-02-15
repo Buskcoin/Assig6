@@ -12,7 +12,7 @@ import javax.swing.*;
  * @author BigMac
  *
  */
-public class Clock extends JFrame
+class Clock extends JFrame
 {
 	private int counter = 0;
 	private boolean runTimer = false;

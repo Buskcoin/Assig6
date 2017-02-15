@@ -24,7 +24,7 @@ import javax.swing.JPanel;
  * @author BigMac
  *
  */
-public class GameView extends JFrame
+class GameView extends JFrame
 {
 
    int NUM_CARDS_PER_HAND = 7;

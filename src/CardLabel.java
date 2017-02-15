@@ -1,7 +1,7 @@
 import javax.swing.Icon;
 import javax.swing.JLabel;
 
-public class CardLabel extends JLabel
+class CardLabel extends JLabel
 {
 
    Card card;
